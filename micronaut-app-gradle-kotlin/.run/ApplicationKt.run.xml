@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ApplicationKt" type="JetRunConfigurationType" nameIsGenerated="true">
+    <envs>
+      <env name="OTEL_RESOURCE_ATTRIBUTES" value="digma.environment=MN-GRADLE-KOTLIN" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="example.micronaut.ApplicationKt" />
+    <module name="default.main" />
+    <shortenClasspath name="NONE" />
+    <option name="VM_PARAMETERS" value="-Dotel.java.global-autoconfigure.enabled=true" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
