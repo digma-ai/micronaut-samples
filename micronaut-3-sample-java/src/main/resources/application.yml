@@ -1,0 +1,14 @@
+micronaut:
+  application:
+    name: demo
+  server:
+    port: 8088
+netty:
+  default:
+    allocator:
+      max-order: 3
+tracing:
+  otel:
+    traces:
+      exporter: otlp
+      propagators: tracecontext, baggage, xray
