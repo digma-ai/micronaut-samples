@@ -18,6 +18,7 @@ package com.example
 import io.micronaut.http.MediaType
 import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Get
+import io.micronaut.http.annotation.Post
 import io.micronaut.http.annotation.Produces
 
 @Controller("/hello") // <1>
@@ -26,4 +27,14 @@ class HelloController {
     @Get// <2>
     @Produces(MediaType.TEXT_PLAIN) // <3>
     fun index() = "Hello World - micronaut 3 gradle kotlin"
+
+    @Post("/mypost", produces = [MediaType.TEXT_PLAIN])
+    fun myPost() = "Post Hello World - micronaut 3 gradle kotlin"
+
+    @Post(value = "/mypost2", produces = [MediaType.TEXT_PLAIN])
+    fun myPost2() = "Post Hello World - micronaut 3 gradle kotlin"
+
+
+    @Post(value = "/mypost3")
+    fun myPost3() = "Post Hello World - micronaut 3 gradle kotlin"
 }
