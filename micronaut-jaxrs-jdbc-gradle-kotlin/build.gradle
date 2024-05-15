@@ -12,6 +12,10 @@ plugins {
 version = "0.1"
 group = "example.micronaut"
 
+kotlin {
+    jvmToolchain(17)
+}
+
 repositories {
     mavenCentral()
 }
@@ -46,9 +50,9 @@ dependencies {
     implementation("io.opentelemetry:opentelemetry-extension-kotlin")
 
     //tracing
-    implementation("io.micronaut.tracing:micronaut-tracing-opentelemetry")
-    implementation("io.opentelemetry:opentelemetry-exporter-otlp")
-    implementation("io.micronaut.tracing:micronaut-tracing-opentelemetry-http")
+//    implementation("io.micronaut.tracing:micronaut-tracing-opentelemetry")
+//    implementation("io.opentelemetry:opentelemetry-exporter-otlp")
+//    implementation("io.micronaut.tracing:micronaut-tracing-opentelemetry-http")
 }
 
 
